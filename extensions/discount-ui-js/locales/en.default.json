@@ -1,0 +1,19 @@
+{
+  "name": "[Example] Discount UI extension",
+  "description": "Discount UI extension",
+  "title": "Select which discount types to apply at checkout",
+  "loading": "Loading...",
+  "label": "Percentage off",
+  "products": {
+    "buttonLabel": "Add products",
+    "allProducts": "All products",
+    "specificProducts": "Specific products",
+    "appliesTo": "Applies to"
+  },
+  "discountClasses": {
+    "product": "Product discount",
+    "order": "Order discount",
+    "shipping": "Shipping discount"
+  },
+  "error": "Unable to update discount types. Please try again."
+}

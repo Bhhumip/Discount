@@ -1,0 +1,17 @@
+query DeliveryOptionsInput($namespace: String!, $key: String!) {
+  cart {
+    deliveryGroups {
+      id
+      deliveryOptions {
+        handle
+        title
+      }
+    }
+  }
+  discount {
+    discountClasses
+    metafield(namespace: $namespace, key: $key) {
+      jsonValue
+    }
+  }
+}
