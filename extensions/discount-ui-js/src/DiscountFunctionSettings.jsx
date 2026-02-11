@@ -300,8 +300,6 @@ function useExtensionData() {
       key: "special-discount-configuration",
       value: JSON.stringify({
         cartLinePercentage: percentages.product,
-        orderPercentage: percentages.order,
-        deliveryPercentage: percentages.shipping,
         productIds: products.map(({ id }) => id),
       }),
       valueType: "json",

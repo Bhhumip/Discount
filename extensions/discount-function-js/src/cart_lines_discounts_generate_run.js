@@ -5,7 +5,7 @@ function parseConfig(metafieldValue) {
   try {
     const parsed = JSON.parse(metafieldValue);
     return {
-      // Align with UI key: cartLinePercentage
+
       percentage: Number(parsed.cartLinePercentage ?? 0),
       productIds: parsed.productIds || [],
     };
@@ -18,7 +18,7 @@ export default function run(input) {
   const rawMetafield = input?.discount?.metafield?.value;
   if (!rawMetafield) return { operations: [] };
 
-  // FIX: Call parseConfig directly, NOT JSON.parseConfig
+
   const config = parseConfig(rawMetafield);
 
   const targetLines = input.cart.lines.filter(line => {
