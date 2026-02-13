@@ -1,14 +1,15 @@
 {
-  "name": "[Example] Discount UI extension",
-  "description": "Discount UI extension",
-  "title": "Select which discount types to apply at checkout",
+  "name": "SpecialDiscount Configuration",
+  "title": "Discount percentage",
   "loading": "Loading...",
   "label": "Percentage off",
   "products": {
-    "buttonLabel": "Add products",
+    "buttonLabel": "Browse products",
     "allProducts": "All products",
+    "appliesTo": "Applies to",
     "specificProducts": "Specific products",
-    "appliesTo": "Applies to"
+    "specificCollections": "Specific collections",
+    "collectionsButtonLabel": "Browse collections"
   },
   "discountClasses": {
     "product": "Product discount",

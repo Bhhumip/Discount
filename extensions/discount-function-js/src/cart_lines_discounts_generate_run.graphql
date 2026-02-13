@@ -1,22 +1,31 @@
-query CartInput($collectionIds: [ID!]) {
+query RunInput {
   cart {
+    buyerIdentity {
+      customer {
+        numberOfOrders
+      }
+    }
     lines {
       id
+      quantity
       merchandise {
         __typename
         ... on ProductVariant {
           product {
-            id 
-            inAnyCollection(ids: $collectionIds)
+            id
           }
         }
       }
     }
   }
   discount {
-    
-    metafield(namespace: "custom", key: "special-discount-configuration") {
+    discountClasses
+    metafield(
+      namespace: "custom"
+      key: "special-discount-configuration"
+    ) {
       value
     }
   }
+  triggeringDiscountCode
 }
